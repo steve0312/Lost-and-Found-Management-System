@@ -10,14 +10,21 @@ struct LostStuff {
 	int num, date;							// 관리번호, 분실날짜
 };
 
+
+
+
 /* 분실물 관리 클래스 */
 class Management {
 	LostStuff listElement;								// 분실물 하나의 정보를 담는 구조체
 	std::list<LostStuff> stuffList;						// 분실물 목록을 저장하는 연결 리스트
 	std::list<LostStuff>::iterator it;					// 분실물 목록의 iterator
 public:
+	std::string password; //비밀번호
+	std::string notice;   //공지사항
 	void enrollment();									// 연결 리스트에 분실물을 등록하는 함수
 	void status();										// 연결 리스트에 저장된 분실물 현황을 문자열로 반환하는 함수
+	void login();
+	void notices();
 	std::string search();								// 연결 리스트에 저장된 분실물을 탐색하는 함수
 	std::string deepSearch();							// 연결 리스트에 저장된 분실물을 세부적으로 탐색하는 함수
 private:
@@ -34,7 +41,8 @@ private:
 		int* num, 
 		std::string* name, 
 		std::string* place, 
-		int* date);										// 매개변수 쿼리
+		int* date);
+	// 매개변수 쿼리
 };
 
 #endif

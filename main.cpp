@@ -66,7 +66,24 @@ int main() {
 				}
 				break;
 			}
-			else if (menu_number == "5") assert(0);			// 5번 : 공지 확인
+			else if (menu_number == "5") {					// 5번 : 공지 확인
+				while (true) {
+               		std::string select;
+               		std::cout << "\n[공지사항]";
+               		manage.notices();
+               		std::cout << std::endl << "[a] 로그인 [b] 종료 >> ";
+               		std::cin >> select;
+               		if (select == "a") {
+                  		manage.login();
+                  		break;
+               	 	}
+                	else if (select == "b") {
+            			break;
+                	}
+                	else std::cout << "올바른 기호를 입력해주세요." << std::endl << std::endl;
+				}
+				break;
+			}
 			else if (menu_number == "6") {					// 6번 : 프로그램 종료
 				system(::clear.c_str());
 				std::cout << " *** 분실물 관리 프로그램을 이용해주셔서 감사합니다. 프로그램은 3초 후 자동으로 종료됩니다. ***" << std::endl;
@@ -122,7 +139,7 @@ void interface_bottom() {
 	std::cout << "│ [ 2 ] 분실물 현황                │" << std::endl;
 	std::cout << "│ [ 3 ] 분실물 삭제 (가칭, 미구현) │" << std::endl;
 	std::cout << "│ [ 4 ] 분실물 탐색                │" << std::endl;
-	std::cout << "│ [ 5 ] 공지 확인 (가칭, 미구현)   │" << std::endl;
+	std::cout << "│ [ 5 ] 공지 확인                  │" << std::endl;
 	std::cout << "│ [ 6 ] 종료                       │" << std::endl;
 	std::cout << "└──────────────────────────────────┘" << std::endl;
 	std::cout << std::endl;
