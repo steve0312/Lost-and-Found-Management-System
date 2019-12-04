@@ -70,6 +70,22 @@ KwangWoon University 2019-2 DataStructure Team Project
 
 공지사항을 수정할 수 있는 기능입니다.
 
+로그인을 한 뒤, 공지사항을 입력합니다.
+
+![공지사항 등록된 화면](https://user-images.githubusercontent.com/51722592/70101785-659f1600-1679-11ea-8d92-6807b5b20d0c.JPG)
+
+공지사항이 등록된 화면입니다.
+
+![비밀번호 오류](https://user-images.githubusercontent.com/51722592/70101786-659f1600-1679-11ea-88e4-719240c1a302.JPG)
+
+비밀번호가 오류났을 때, 화면입니다.
+
+해당 화면에서 비밀번호를 모를 경우 'B','b'를 눌러 종료가 가능합니다.
+
+![변경한 공지사항](https://user-images.githubusercontent.com/51722592/70101787-6637ac80-1679-11ea-9883-6581717b8001.JPG)
+
+공지사항을 수정한 화면입니다.
+
 6. 종료
 3초 후 프로그램을 종료합니다.
 
