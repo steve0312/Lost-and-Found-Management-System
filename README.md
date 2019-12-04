@@ -66,7 +66,7 @@ KwangWoon University 2019-2 DataStructure Team Project
 
 5. 공지 확인
 
-(https://user-images.githubusercontent.com/51722592/70101784-659f1600-1679-11ea-9355-f023681cb9f8.JPG)
+![공지사항 시작화면](https://user-images.githubusercontent.com/51722592/70101784-659f1600-1679-11ea-9355-f023681cb9f8.JPG)
 
 공지사항을 수정할 수 있는 기능입니다.
 
