@@ -96,3 +96,4 @@ KwangWoon University 2019-2 DataStructure Team Project
 
 # README 파일 수정
 2019.11.10 이상호
+2019.12.04 안준모
