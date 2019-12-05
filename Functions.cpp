@@ -5,6 +5,8 @@ extern void interface_top(bool num, bool name, bool place, bool date);
 extern void interface_bottom();
 extern std::string clear, status;
 
+using namespace std;
+
 /* 연결 리스트에 분실물을 등록하는 함수 */
 void Management::enrollment() {
 	std::cin.ignore(256, '\n');
@@ -287,4 +289,27 @@ std::list<LostStuff> Management::search(
 		list.clear();						// 다음 쿼리를 위해 list 비우기
 	}
 	return searchList;			// 리스트 반환
+}
+
+/* 분실물 삭제 함수 */
+void Management::removeList() {
+	if (stuffList.size() == 0) return;
+
+	int n;
+	list<LostStuff>::iterator iter = stuffList.begin();
+
+	cout << "삭제할 분실물의 관리 번호를 입력하세요. >> ";
+	cin >> n;
+
+	if (n == 0 || n > stuffList.size()) return;
+	
+	for (int i = 0; i < n-1; i++) {
+		iter++;
+	}
+
+	iter = stuffList.erase(iter);
+
+	for (iter; iter != stuffList.end(); iter++) {
+		iter->num = iter->num - 1;
+	}
 }

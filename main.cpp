@@ -3,6 +3,8 @@
 #include <iostream>
 #include <unistd.h>
 
+using namespace std;
+
 void interface_top(bool num, bool name, bool place, bool date);			// 특정 컬럼의 출력 여부를 결정하는 매개변수
 void interface_bottom();
 
@@ -48,7 +50,10 @@ int main() {
 				manage.status();
 				break;
 			}
-			else if (menu_number == "3") assert(0);			// 3번 : 분실물 삭제
+			else if (menu_number == "3") {					// 3번 : 분실물 삭제
+				manage.removeList();
+				break;
+			}
 			else if (menu_number == "4") {					// 4번 : 분실물 검색
 				while (true) {
 					std::string select;
@@ -137,7 +142,7 @@ void interface_bottom() {
 	std::cout << "┌──────────────────────────────────┐" << std::endl;
 	std::cout << "│ [ 1 ] 분실물 등록                │" << std::endl;
 	std::cout << "│ [ 2 ] 분실물 현황                │" << std::endl;
-	std::cout << "│ [ 3 ] 분실물 삭제 (가칭, 미구현) │" << std::endl;
+	std::cout << "│ [ 3 ] 분실물 삭제                │" << std::endl;
 	std::cout << "│ [ 4 ] 분실물 탐색                │" << std::endl;
 	std::cout << "│ [ 5 ] 공지 확인                  │" << std::endl;
 	std::cout << "│ [ 6 ] 종료                       │" << std::endl;
