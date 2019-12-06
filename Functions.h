@@ -19,14 +19,15 @@ class Management {
 	std::list<LostStuff> stuffList;						// 분실물 목록을 저장하는 연결 리스트
 	std::list<LostStuff>::iterator it;					// 분실물 목록의 iterator
 public:
-	std::string password; //비밀번호
-	std::string notice;   //공지사항
+	std::string password; 								//비밀번호
+	std::string notice;  								//공지사항
 	void enrollment();									// 연결 리스트에 분실물을 등록하는 함수
 	void status();										// 연결 리스트에 저장된 분실물 현황을 문자열로 반환하는 함수
 	void login();
 	void notices();
 	std::string search();								// 연결 리스트에 저장된 분실물을 탐색하는 함수
 	std::string deepSearch();							// 연결 리스트에 저장된 분실물을 세부적으로 탐색하는 함수
+	void removeList();									// 관리 번호를 입력받아 해당 분실물을 연결 리스트에서 삭제하는 함수 
 private:
 	std::string status(std::list<LostStuff> list, 
 		bool num, bool name, bool place, bool date);	// 분실물 목록을 출력하기 위한 문자열을 생성, 특정 컬럼의 출력 여부 결정 가능
