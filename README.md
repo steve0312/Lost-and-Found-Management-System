@@ -7,22 +7,27 @@ KwangWoon University 2019-2 DataStructure Team Project
 분실물 관리 프로그램입니다. 
 
 - 인터페이스
-![인터페이스](https://user-images.githubusercontent.com/37099626/68545579-cc7e3600-0411-11ea-8886-f4c7c94960b0.PNG)
+![분실물](https://user-images.githubusercontent.com/37099626/70384083-97d3af00-19bc-11ea-9a3a-c9c09d049e4d.PNG)
 인터페이스 구성입니다.
 
 
 - 기능
 1. 분실물 등록
-![분실물 등록](https://user-images.githubusercontent.com/37099626/68545586-dacc5200-0411-11ea-8e50-97cb7e4a8cbf.PNG)
+![등록](https://user-images.githubusercontent.com/37099626/70384088-a3bf7100-19bc-11ea-9518-3830fafce289.PNG)
 분실물을 등록하는 기능입니다.
 
 
 2. 분실물 현황
-![분실물 현황](https://user-images.githubusercontent.com/37099626/68545668-8aa1bf80-0412-11ea-9cf1-43ad891c4e65.PNG)
+![현황2](https://user-images.githubusercontent.com/37099626/70384091-b6d24100-19bc-11ea-9365-c4ee789d4a4f.PNG)
 등록된 분실물 현황을 볼 수 있는 기능입니다. 즉 등록된 분실물 목록의 관리번호, 분실물명, 분실장소, 분실일자를 위치에 맞게 출력. 따로 정렬하지 않고 그냥 등록된 순서대로 출력되도록 합니다.
 
 
 3. 분실물 삭제
+![삭제1](https://user-images.githubusercontent.com/37099626/70384094-c487c680-19bc-11ea-885e-80dbb8a099e5.PNG)
+등록되있는 분실물을 삭제하는 기능입니다. 관리번호는 고유하므로 관리번호를 통해 해당 분실물을 삭제할 수 있습니다.
+
+![삭제2](https://user-images.githubusercontent.com/37099626/70384099-cb163e00-19bc-11ea-90ff-787b6f0c8974.PNG)
+삭제 후 현황을 통해 입력한 관리번호의 분실물이 삭제된 모습을 확인할 수 있습니다.
 
 
 4. 분실물 탐색
@@ -34,11 +39,11 @@ KwangWoon University 2019-2 DataStructure Team Project
    [ 4 ] 분실일자 : 분실일자를 입력해서 조회 가능
    [ 5 ] 뒤로가기 : 메인 화면(초기 화면)으로 이동
    
-![일반탐색1](https://user-images.githubusercontent.com/37099626/68545673-98574500-0412-11ea-807b-d2c954291468.PNG)
-=> 현황에서 일반 탐색으로 "마이크" 분실물 탐색
+![일탐1](https://user-images.githubusercontent.com/37099626/70384122-0ca6e900-19bd-11ea-9926-2bfd7e54b4fd.PNG)
+=> 현황에서 일반 탐색으로 "노트북" 분실물 탐색
 
-![일반탐색2](https://user-images.githubusercontent.com/37099626/68545691-bfae1200-0412-11ea-9dae-572c742b4d51.PNG)
-=> "마이크" 분실물에 대한 상세 정보 출력
+![일탐2](https://user-images.githubusercontent.com/37099626/70384126-25170380-19bd-11ea-8393-e3a84a84b0fd.PNG)
+=> "노트북" 분실물에 대한 상세 정보 출력
 
 
 (2) 세부 탐색
@@ -51,39 +56,41 @@ KwangWoon University 2019-2 DataStructure Team Project
 
 * 세부 탐색에서 등록된 분실물에 대한 정보가 아닐 경우 즉시 메인 인터페이스 화면으로 이동합니다. 
 
-![일반탐색3](https://user-images.githubusercontent.com/37099626/68545737-259a9980-0413-11ea-8886-6cbdd07862a8.PNG)
-=> 현황에서 세부 탐색으로 "마이크" 분실물 탐색 및 "[ 1 ] 출력" 선택
+![세탐1](https://user-images.githubusercontent.com/37099626/70384131-3d871e00-19bd-11ea-8c47-169280446549.PNG)
+=> 현황에서 세부 탐색으로 "에어팟프로" 분실물 탐색 및 "[ 1 ] 출력" 선택
 
-![일반탐색4](https://user-images.githubusercontent.com/37099626/68545754-4531c200-0413-11ea-980e-7d0c70859732.PNG)
-=> "마이크" 분실물의 분실장소, 분실날짜 정보 출력
+![세탐2](https://user-images.githubusercontent.com/37099626/70384134-4c6dd080-19bd-11ea-9ddc-54ecbfeaeef2.PNG)
+=> "에어팟프로" 분실물의 분실장소, 분실날짜 정보 출력
 
-![일반탐색5 예외](https://user-images.githubusercontent.com/37099626/68545766-5da1dc80-0413-11ea-8656-bfb2e0e888c4.PNG)
-=> 분실장소로 "학교" 입력
+![세탐3](https://user-images.githubusercontent.com/37099626/70384144-732c0700-19bd-11ea-9bd2-5d1f87e753d9.PNG)
+=> 현황에서 세부 탐색으로 "에어팟프로" 분실물 탐색 및 "[ 2 ] 모두 출력" 선택
 
-![일반탐색6 메인으로](https://user-images.githubusercontent.com/37099626/68545768-6a263500-0413-11ea-9a65-4570d1fdd88e.PNG)
-=> "마이크" 분실물에 대한 분실장소로 "학교"가 존재하지 않으므로 메인 인터페이스 화면으로 이동
+![세탐4](https://user-images.githubusercontent.com/37099626/70384150-948cf300-19bd-11ea-8b91-0d05913178bd.PNG)
+=> "에어팟프로" 분실물의 관리번호, 분실장소, 분실날짜 정보 출력
+
+주의) 분실물에 대한 정보가 존재하지 않는 경우(등록된 분실물이 아닌 경우) 메인 인터페이스 화면으로 이동
 
 
 5. 공지 확인
 
-![공지사항 시작화면](https://user-images.githubusercontent.com/51722592/70101784-659f1600-1679-11ea-9355-f023681cb9f8.JPG)
+![공지1](https://user-images.githubusercontent.com/37099626/70384219-de2a0d80-19be-11ea-881d-25f9f774ec5e.PNG)
 공지사항을 수정할 수 있는 기능입니다.
 로그인을 한 뒤, 공지사항을 입력합니다.
 
-![공지사항 등록된 화면](https://user-images.githubusercontent.com/51722592/70101785-659f1600-1679-11ea-8d92-6807b5b20d0c.JPG)
+![공지2](https://user-images.githubusercontent.com/37099626/70384221-e5e9b200-19be-11ea-8dfa-5be67791742d.PNG)
 공지사항이 등록된 화면입니다.
 
-![비밀번호 오류](https://user-images.githubusercontent.com/51722592/70101786-659f1600-1679-11ea-88e4-719240c1a302.JPG)
+![공지3](https://user-images.githubusercontent.com/37099626/70384223-eda95680-19be-11ea-8a58-399b7db39e53.PNG)
 비밀번호가 오류났을 때, 화면입니다.
 해당 화면에서 비밀번호를 모를 경우 'B','b'를 눌러 종료가 가능합니다.
 
-![변경한 공지사항](https://user-images.githubusercontent.com/51722592/70101787-6637ac80-1679-11ea-9883-6581717b8001.JPG)
+![공지4](https://user-images.githubusercontent.com/37099626/70384226-f39f3780-19be-11ea-9074-de7bb579fb50.PNG)
 공지사항을 수정한 화면입니다.
 
 6. 종료
 3초 후 프로그램을 종료합니다.
 
-![종료1](https://user-images.githubusercontent.com/37099626/68545779-98a41000-0413-11ea-853f-8e01842ca526.PNG)
+![종료1](https://user-images.githubusercontent.com/37099626/70384227-fac64580-19be-11ea-8c2a-3549dbbbfe5b.PNG)
 => "[ 6 ] 종료" 입력
 
 ![종료2](https://user-images.githubusercontent.com/37099626/68545783-a9ed1c80-0413-11ea-85bc-9269ce1930ed.PNG)
@@ -95,5 +102,6 @@ KwangWoon University 2019-2 DataStructure Team Project
 
 
 # README 파일 수정
-2019.11.10 이상호
-2019.12.04 안준모
+초기수정) 2019.11.10 이상호
+중간수정) 2019.12.04 안준모
+최종수정) 2019.12.08 이상호
